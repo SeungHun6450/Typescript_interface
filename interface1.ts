@@ -1,0 +1,17 @@
+// interface문법은 complie시 사라짐
+interface Person1 {
+  name: string,
+  age: number;
+}
+
+
+function hello1(person: Person1): void{
+  console.log(`안녕하세요! ${person.name} 입니다.`);
+}
+
+const p1: {name: string, age: number} = {
+  name: "Mark",
+  age: 39
+};
+
+hello1(p1);
